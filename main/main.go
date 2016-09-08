@@ -4,7 +4,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/TestGolangBlog/models"
+	"github.com/YPohiba/TestGolang/models"
 	"github.com/codegangsta/martini"
 	"github.com/martini-contrib/render"
 )
