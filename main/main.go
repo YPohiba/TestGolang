@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/YPohiba/TestGolang/models"
+	"github.com/YPohiba/TestGolang/utils"
 	"github.com/codegangsta/martini"
 	"github.com/martini-contrib/render"
 )
@@ -40,7 +41,7 @@ func savePostHandler(rnd render.Render, r *http.Request) {
 		post.Title = title
 		post.Content = content
 	} else {
-		id = models.GenerateId()
+		id = utils.GenerateId()
 		post := models.NewPost(id, title, content)
 		posts[post.Id] = post
 	}
